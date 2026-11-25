@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: replace your-domain.com with your live domain, and lastmod with today's date. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://your-domain.com/</loc>
+    <loc>https://riondev7.onrender.com/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.com/"/>
-    <xhtml:link rel="alternate" hreflang="bn" href="https://your-domain.com/?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://riondev7.onrender.com/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://riondev7.onrender.com/?lang=bn"/>
   </url>
 </urlset>

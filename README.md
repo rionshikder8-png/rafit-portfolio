@@ -3,6 +3,8 @@
 A premium, fully static personal brand website for **Rafit Hasan Rion** — Web Developer,
 Freelancer and Founder of Adverune.
 
+**Live:** <https://riondev7.onrender.com/> — deployed on Render as a static site, auto-deploying from `main`.
+
 Built with **HTML5, CSS3 and vanilla JavaScript only**. No frameworks, no build step, no
 npm, no backend. Open `index.html` and it runs. Upload the folder to any shared host or
 cPanel and it works there too.
@@ -31,7 +33,7 @@ Nothing personal has been invented for you. Every unknown is an empty string, an
 site shows a discreet "not set" state instead of a broken link until you fill it in.
 
 ```
-site.canonicalUrl          → https://your-domain.com/
+site.canonicalUrl          → https://riondev7.onrender.com/
 person.location            → e.g. 'Dhaka, Bangladesh' (optional)
 adverune.url               → Adverune's website (optional)
 contact.whatsapp           → '+8801XXXXXXXXX'  (used by the contact form + WhatsApp links)
@@ -182,6 +184,11 @@ inline `<svg>` inside the matching `.logo-card` in `index.html`.
 ---
 
 ## 9. Deploying
+
+**Render (current setup):** New + → Static Site → connect `rionshikder8-png/rafit-portfolio`,
+branch `main`, build command empty, publish directory `.`. Every push to `main` redeploys.
+The live URL is already wired into the canonical tag, Open Graph URLs, `robots.txt` and
+`sitemap.xml`; update those four places if the domain ever changes.
 
 **Shared hosting / cPanel:** upload the contents of `rafit-portfolio/` into `public_html`.
 Nothing to compile. Keep the folder names exactly as they are.

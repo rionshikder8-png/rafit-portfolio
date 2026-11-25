@@ -25,9 +25,10 @@ window.SITE_CONFIG = {
      1. SITE / SEO
      ------------------------------------------------------------------ */
   site: {
-    // TODO: your live domain, with a trailing slash. Used for canonical,
-    // Open Graph URLs, sitemap and structured data.
-    canonicalUrl: 'https://your-domain.com/',
+    // Live domain, with a trailing slash. Drives the canonical tag, Open
+    // Graph URLs and structured data. Change this (and the matching tags in
+    // index.html) when you move to a custom domain.
+    canonicalUrl: 'https://riondev7.onrender.com/',
 
     // Reference copy for the page title / meta description.
     // The strings the browser actually renders are meta.title and
