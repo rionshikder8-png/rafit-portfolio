@@ -70,8 +70,7 @@ window.SITE_CONFIG = {
      ------------------------------------------------------------------ */
   adverune: {
     name: 'Adverune',
-    // TODO: Adverune's official website. Leave empty until you have it.
-    url: '',
+    url: 'https://adverune.store',
     logo: 'assets/logos/adverune.svg',
     wordmark: 'assets/logos/adverune-wordmark.svg',
     role: 'Founder'
@@ -81,12 +80,11 @@ window.SITE_CONFIG = {
      4. IMAGES
      ------------------------------------------------------------------ */
   media: {
-    // Put your real photograph at assets/images/profile-original.jpg,
-    // then export a polished 4:5 WebP to assets/images/profile-portrait.webp.
-    // The shipped files are neutral placeholders, not a stock person.
+    // Real photograph. profile-original.png is the untouched upload;
+    // profile-portrait.webp is the 4:5 web version used on the page.
     portrait: 'assets/images/profile-portrait.webp',
-    portraitOriginal: 'assets/images/profile-original.jpg',
-    portraitAlt: 'Portrait of Rafit Hasan Rion',
+    portraitOriginal: 'assets/images/profile-original.png',
+    portraitAlt: 'Portrait of Rafit Hasan Rion in a black suit against a violet-lit backdrop',
     heroBackground: 'assets/images/hero-background.webp',
     ogImage: 'assets/images/og-image.webp'
   },
@@ -98,28 +96,31 @@ window.SITE_CONFIG = {
      ------------------------------------------------------------------ */
   contact: {
     // International format, digits only for the wa.me link.
-    // TODO: e.g. '+8801XXXXXXXXX'
-    whatsapp: '',
-    // Human-readable version shown on the page. TODO: e.g. '+880 1XXX-XXXXXX'
-    phoneDisplay: '',
-    // TODO: e.g. 'hello@your-domain.com'
-    email: '',
+    whatsapp: '+8801912046595',
+    // Human-readable version shown on the page.
+    phoneDisplay: '+880 1912-046595',
+    // Primary email shown and linked on the page (business address).
+    email: 'info@adverune.store',
+    // Personal email. Used as the contact form fallback when WhatsApp is unavailable.
+    personalEmail: 'shikderrion216@gmail.com',
     // Where the contact form sends people when WhatsApp is not configured.
-    // Leave empty to fall back to the visitor's own mail client.
-    formFallbackEmail: '',
+    formFallbackEmail: 'shikderrion216@gmail.com',
 
     // Pre-filled WhatsApp message from the contact form.
     whatsappIntro: 'Hello Rafit, I found your portfolio.'
   },
 
   links: {
-    // TODO: your full profile URLs.
-    upwork: '',
-    fiverr: '',
-    linkedin: '',
-    facebook: '',
-    // TODO: link to your CV file, e.g. 'assets/files/rafit-hasan-rion-cv.pdf'
-    cv: ''
+    // Profile URLs. Leave '' until the real URL is confirmed; never guess.
+    upwork: '',    // TODO: not confirmed yet
+    fiverr: '',    // TODO: display name is "Prx Rion"; add the full profile URL
+    linkedin: '',  // TODO: not confirmed yet
+    facebook: '',  // TODO: Facebook Page is "Adverune"; add the full page URL
+    // Display names shown beside the cards until a full URL is available.
+    fiverrName: 'Prx Rion',
+    facebookName: 'Adverune',
+    // CV served from this repository.
+    cv: 'assets/files/Rafit_Hasan_Rion_Professional_CV.pdf'
   },
 
   /* ------------------------------------------------------------------
@@ -135,7 +136,7 @@ window.SITE_CONFIG = {
       name: 'APS Payment',
       logo: 'assets/logos/aps-payment.svg',
       brand: '#1D4ED8',
-      url: '', // TODO
+      url: '', // TODO: URL not provided
       row: 1
     },
     {
@@ -143,7 +144,7 @@ window.SITE_CONFIG = {
       name: 'Adverune',
       logo: 'assets/logos/adverune-wordmark.svg',
       brand: '#6D3AF0',
-      url: '', // TODO
+      url: 'https://adverune.store',
       row: 1
     },
     {
@@ -151,15 +152,23 @@ window.SITE_CONFIG = {
       name: 'Amar Bazar Demo',
       logo: 'assets/logos/amar-bazar.svg',
       brand: '#0E9F6E',
-      url: '', // TODO
+      url: 'https://demo1.adverune.store',
       row: 1
+    },
+    {
+      id: 'ai-commerce-agent',
+      name: 'AI Commerce Agent',
+      logo: 'assets/logos/ai-commerce-agent.svg',
+      brand: '#6D3AF0',
+      url: 'https://agent.adverune.store',
+      row: 2
     },
     {
       id: 'international-ecommerce',
       name: 'International E-Commerce',
       logo: 'assets/logos/international-ecommerce.svg',
       brand: '#F97316',
-      url: '', // TODO
+      url: '', // TODO: URL not provided
       row: 2
     },
     {
@@ -167,7 +176,7 @@ window.SITE_CONFIG = {
       name: 'Dorahost',
       logo: 'assets/logos/dorahost.svg',
       brand: '#0EA5E9',
-      url: '', // TODO
+      url: 'https://dorahost.online',
       row: 2
     },
     {
@@ -175,7 +184,8 @@ window.SITE_CONFIG = {
       name: 'A-Mail by Adverune',
       logo: 'assets/logos/a-mail.svg',
       brand: '#7C3AED',
-      url: '', // TODO
+      url: '', // Mobile application: no website URL
+      note: 'mobile-app',
       row: 2
     }
   ],

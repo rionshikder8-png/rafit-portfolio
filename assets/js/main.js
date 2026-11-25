@@ -38,6 +38,7 @@
       case 'adverune': return (cfg.adverune || {}).url || '';
       case 'whatsapp': return whatsappUrl(contact.whatsapp, contact.whatsappIntro);
       case 'email': return contact.email ? 'mailto:' + contact.email : '';
+      case 'personalEmail': return contact.personalEmail ? 'mailto:' + contact.personalEmail : '';
       case 'phone': {
         var raw = contact.phoneDisplay || contact.whatsapp || '';
         var tel = String(raw).replace(/[^\d+]/g, '');
@@ -63,7 +64,15 @@
           el.removeAttribute('target');
           el.removeAttribute('rel');
         }
-        if (el.hasAttribute('data-download')) el.setAttribute('download', '');
+        if (el.hasAttribute('data-download')) {
+          // Keep a friendly filename for the saved file.
+          el.setAttribute('download', url.split('/').pop() || '');
+        }
+        if (el.hasAttribute('data-view')) {
+          el.removeAttribute('download');
+          el.setAttribute('target', '_blank');
+          el.setAttribute('rel', 'noopener noreferrer');
+        }
       } else {
         el.removeAttribute('href');
         el.removeAttribute('target');
@@ -78,17 +87,19 @@
     var values = {
       whatsapp: contact.phoneDisplay || contact.whatsapp || '',
       email: contact.email || '',
+      personalEmail: contact.personalEmail || '',
       phone: contact.phoneDisplay || contact.whatsapp || '',
-      facebook: prettyUrl(links.facebook),
+      facebook: prettyUrl(links.facebook) || links.facebookName || '',
       linkedin: prettyUrl(links.linkedin)
     };
 
     document.querySelectorAll('[data-contact-row]').forEach(function (row) {
       var key = row.getAttribute('data-link');
       var out = row.querySelector('[data-value]');
+      if (!out) return; // rows with fixed text (e.g. View CV)
       var value = values[key] || '';
       if (out) out.textContent = value || t('misc.notSet');
-      row.classList.toggle('is-unset', !value);
+      row.classList.toggle('is-unset', !value || !linkFor(key));
     });
 
     // Footer e-mail link shows the address itself
@@ -106,11 +117,15 @@
         el.setAttribute('target', '_blank');
         el.setAttribute('rel', 'noopener noreferrer');
         el.classList.remove('is-unset');
+        el.removeAttribute('aria-disabled');
         el.setAttribute('aria-label', project.name + ' — ' + t('projects.visit'));
       } else {
         el.removeAttribute('href');
+        el.removeAttribute('target');
+        el.removeAttribute('rel');
         el.classList.add('is-unset');
         el.setAttribute('aria-label', project.name);
+        el.setAttribute('aria-disabled', 'true');
       }
     });
   }

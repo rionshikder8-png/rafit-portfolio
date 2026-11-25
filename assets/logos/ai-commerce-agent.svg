@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" role="img" aria-label="AI Commerce Agent">
+  <g fill="none" stroke="#6D3AF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 24h32l-3.4 28H11.4z"/><path d="M17 24v-3.5a7 7 0 0114 0V24"/><path d="M24 33l2 4.5 4.5 2-4.5 2-2 4.5-2-4.5-4.5-2 4.5-2z" fill="#6D3AF0" stroke="none"/>
+  </g>
+  <text x="56" y="34" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.9" fill="#111111" opacity=".72">AI COMMERCE</text>
+  <text x="56" y="56" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="800" fill="#111111">AGENT</text>
+</svg>

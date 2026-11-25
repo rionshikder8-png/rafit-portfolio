@@ -40,8 +40,9 @@ contact.whatsapp           → '+8801XXXXXXXXX'  (used by the contact form + Wha
 contact.phoneDisplay       → '+880 1XXX-XXXXXX'
 contact.email              → 'hello@your-domain.com'
 links.upwork / fiverr / linkedin / facebook
-links.cv                   → e.g. 'assets/files/rafit-hasan-rion-cv.pdf'
-projects[].url             → the six project destinations
+links.cv                   → 'assets/files/Rafit_Hasan_Rion_Professional_CV.pdf' (set)
+projects[].url             → live for Adverune, Amar Bazar, AI Commerce Agent, DoraHost.
+                             A-Mail is a mobile app (no URL); APS Payment and International E-Commerce are pending.
 ```
 
 Then update the domain in these places too (search for `your-domain.com`):
@@ -62,20 +63,20 @@ configured. Nothing is stored or transmitted by the page.
 
 ## 3. Your photograph
 
-The shipped `profile-original.jpg` and `profile-portrait.webp` are **neutral placeholders**,
-not a stock person — no face was invented for you.
+`assets/images/profile-original.png` is the untouched upload. `assets/images/profile-portrait.webp`
+is the 4:5 web version (819 x 1024, native pixels, nothing upscaled) used in the hero.
 
-To use your own photo:
+To change it, replace both files and keep the same names. If the framing differs, adjust
+`object-position` on `.portrait__img` in `assets/css/style.css` (currently `50% 14%`) and the
+`width` / `height` / `alt` on the `<img class="portrait__img">` element in `index.html`.
 
-1. Save your photo as `assets/images/profile-original.jpg` (keep this as the untouched original).
-2. Export a portrait crop, **4:5 aspect ratio**, around 1000 × 1250 px, as
-   `assets/images/profile-portrait.webp` (quality ~85).
-3. If your framing differs, adjust `object-position` on `.portrait__img` in
-   `assets/css/style.css` (currently `50% 22%`).
-4. Update `alt` text on the `<img class="portrait__img">` element in `index.html`.
+---
 
-The frame, glass ring, floating identity card and availability chip all adapt to any
-portrait automatically.
+## Your CV
+
+`assets/files/Rafit_Hasan_Rion_Professional_CV.pdf` is served as-is. The hero **Download CV**
+button downloads it; **View CV** (About and Contact) opens it in a new tab. The path comes from
+`links.cv` in `config.js`.
 
 ---
 
@@ -99,7 +100,7 @@ rafit-portfolio/
     │   ├── sliders.js          Seamless logo marquees
     │   └── main.js             Nav, links, reveal, form, back-to-top
     ├── images/
-    │   ├── profile-original.jpg
+    │   ├── profile-original.png
     │   ├── profile-portrait.webp
     │   ├── hero-background.webp
     │   ├── og-image.webp

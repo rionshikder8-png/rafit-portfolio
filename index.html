@@ -59,13 +59,32 @@
   "description": "Web developer, freelancer and founder of Adverune. Builds modern websites, e-commerce platforms and practical web applications.",
   "url": "https://riondev7.onrender.com/",
   "image": "https://riondev7.onrender.com/assets/images/profile-portrait.webp",
-  "knowsAbout": ["Web Development", "Frontend Development", "Backend Development", "PHP", "JavaScript", "React.js", "Next.js", "Node.js", "MySQL", "MongoDB", "E-commerce Development"],
+  "knowsAbout": [
+    "Web Development",
+    "Frontend Development",
+    "Backend Development",
+    "PHP",
+    "JavaScript",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "MySQL",
+    "MongoDB",
+    "E-commerce Development"
+  ],
   "worksFor": {
     "@type": "Organization",
     "name": "Adverune",
-    "url": "https://riondev7.onrender.com/"
+    "url": "https://adverune.store"
   },
-  "knowsLanguage": ["bn", "en"]
+  "knowsLanguage": [
+    "bn",
+    "en"
+  ],
+  "email": "mailto:info@adverune.store",
+  "sameAs": [
+    "https://adverune.store"
+  ]
 }
 </script>
 </head>
@@ -172,7 +191,7 @@
             <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
           <a class="btn btn--dark" href="#contact" data-i18n="hero.ctaContact">Contact Me</a>
-          <a class="btn btn--ghost" href="#" data-link="cv" data-download>
+          <a class="btn btn--ghost" href="assets/files/Rafit_Hasan_Rion_Professional_CV.pdf" download="Rafit_Hasan_Rion_Professional_CV.pdf" data-link="cv" data-download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
             <span data-i18n="hero.ctaCv">Download CV</span>
           </a>
@@ -206,7 +225,7 @@
           <span class="portrait__glow" aria-hidden="true"></span>
           <div class="portrait__inner">
             <img class="portrait__img" src="assets/images/profile-portrait.webp"
-                 alt="Portrait of Rafit Hasan Rion" width="1000" height="1250"
+                 alt="Portrait of Rafit Hasan Rion in a black suit against a violet-lit backdrop" width="819" height="1024"
                  fetchpriority="high" decoding="async">
             <span class="availability" id="availability">
               <span class="availability__dot" aria-hidden="true"></span>
@@ -263,6 +282,13 @@
             <h3 data-i18n="about.card4.t">Founder of Adverune</h3>
             <p data-i18n="about.card4.d">Running a studio for brand and web work.</p>
           </article>
+        </div>
+
+        <div class="about__cta">
+          <a class="btn btn--ghost" href="assets/files/Rafit_Hasan_Rion_Professional_CV.pdf" target="_blank" rel="noopener noreferrer" data-link="cv" data-view>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+            <span data-i18n="about.viewCv">View CV</span>
+          </a>
         </div>
       </div>
 
@@ -462,7 +488,7 @@
           <text x="58" y="40" font-size="23" font-weight="800" fill="currentColor">APS</text>
           <text x="58" y="57" font-size="10.5" font-weight="600" letter-spacing="3.6" fill="currentColor" opacity=".72">PAYMENT</text>
         </svg>
-        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+        <span class="logo-card__hint" data-i18n="projects.soon">Link coming soon</span>
       </a>
 
       <a class="logo-card" data-project="adverune" style="--brand:#6D3AF0" aria-label="Adverune">
@@ -487,13 +513,23 @@
 
   <div class="marquee marquee--reverse" data-marquee="projects" data-row="2" aria-label="Projects, second row" data-i18n-attr="aria-label:projects.row2">
     <div class="marquee__track" data-track>
+      <a class="logo-card" data-project="ai-commerce-agent" style="--brand:#6D3AF0" aria-label="AI Commerce Agent">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h32l-3.4 28H11.4z"/><path d="M17 24v-3.5a7 7 0 0114 0V24"/></g>
+          <path d="M24 32l2.1 4.6 4.6 2.1-4.6 2.1L24 45.4l-2.1-4.6-4.6-2.1 4.6-2.1z" fill="currentColor"/>
+          <text x="56" y="34" font-size="9.5" font-weight="700" letter-spacing="2.9" fill="currentColor" opacity=".72">AI COMMERCE</text>
+          <text x="56" y="56" font-size="22" font-weight="800" fill="currentColor">AGENT</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+
       <a class="logo-card" data-project="international-ecommerce" style="--brand:#F97316" aria-label="International E-Commerce">
         <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
           <g fill="none" stroke="currentColor" stroke-width="2.8"><circle cx="24" cy="36" r="18"/><ellipse cx="24" cy="36" rx="7.5" ry="18"/><path d="M6.5 29h35M6.5 43h35"/></g>
           <text x="54" y="33" font-size="9.5" font-weight="700" letter-spacing="2.9" fill="currentColor" opacity=".72">INTERNATIONAL</text>
           <text x="54" y="56" font-size="21" font-weight="800" fill="currentColor">E-COMMERCE</text>
         </svg>
-        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+        <span class="logo-card__hint" data-i18n="projects.soon">Link coming soon</span>
       </a>
 
       <a class="logo-card" data-project="dorahost" style="--brand:#0EA5E9" aria-label="Dorahost">
@@ -510,7 +546,7 @@
           <text x="58" y="40" font-size="23" font-weight="800" letter-spacing="0.8" fill="currentColor">A-MAIL</text>
           <text x="58" y="57" font-size="9.5" font-weight="600" letter-spacing="2.6" fill="currentColor" opacity=".72">BY ADVERUNE</text>
         </svg>
-        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+        <span class="logo-card__hint" data-i18n="projects.mobile">Mobile app</span>
       </a>
     </div>
   </div>
@@ -560,6 +596,13 @@
                 <span class="contact-row__value" data-value="email">—</span>
               </span>
             </a>
+            <a class="contact-row" href="#" data-link="personalEmail" data-contact-row>
+              <span class="contact-row__icon"><img src="assets/logos/social/gmail.svg" alt="" width="16" height="16" loading="lazy" decoding="async"></span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.personalEmailLabel">Personal email</span>
+                <span class="contact-row__value" data-value="personalEmail">—</span>
+              </span>
+            </a>
             <a class="contact-row" href="#" data-link="phone" data-contact-row>
               <span class="contact-row__icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 4.5h4l2 5-2.5 1.5a11 11 0 005 5L14.5 13l5 2v4a1.5 1.5 0 01-1.6 1.5A16.5 16.5 0 013 6.1 1.5 1.5 0 014.5 4.5z"/></svg>
@@ -581,6 +624,15 @@
               <span>
                 <span class="contact-row__label" data-i18n="contact.linkedinLabel">LinkedIn</span>
                 <span class="contact-row__value" data-value="linkedin">—</span>
+              </span>
+            </a>
+            <a class="contact-row" href="assets/files/Rafit_Hasan_Rion_Professional_CV.pdf" target="_blank" rel="noopener noreferrer" data-link="cv" data-view data-contact-row>
+              <span class="contact-row__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+              </span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.cvLabel">Curriculum Vitae</span>
+                <span class="contact-row__value" data-i18n="about.viewCv">View CV</span>
               </span>
             </a>
           </div>
