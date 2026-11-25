@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" role="img" aria-label="A-Mail by Adverune">
+  <g fill="none" stroke="#7C3AED" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="20" width="42" height="28" rx="6"/><path d="M5 23l19 14 19-14"/>
+  </g>
+  <text x="58" y="40" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="0.8" fill="#111111">A-MAIL</text>
+  <text x="58" y="57" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.6" fill="#7C3AED">BY ADVERUNE</text>
+</svg>

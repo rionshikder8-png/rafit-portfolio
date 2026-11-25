@@ -1,0 +1,8 @@
+# Rafit Hasan Rion — portfolio
+# TODO: replace your-domain.com with your live domain.
+
+User-agent: *
+Allow: /
+Disallow: /assets/js/config.js
+
+Sitemap: https://your-domain.com/sitemap.xml

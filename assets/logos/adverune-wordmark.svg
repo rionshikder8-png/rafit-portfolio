@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" role="img" aria-label="Adverune">
+  <defs><linearGradient id="av2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C4DFF"/><stop offset="1" stop-color="#4A1FD6"/></linearGradient></defs>
+  <path d="M22 12 40 58H4z" fill="none" stroke="url(#av2)" stroke-width="3.6" stroke-linejoin="round"/>
+  <path d="M22 34v24" stroke="url(#av2)" stroke-width="3.6" stroke-linecap="round"/>
+  <text x="56" y="45" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="2.2" fill="#111111">ADVERUNE</text>
+</svg>

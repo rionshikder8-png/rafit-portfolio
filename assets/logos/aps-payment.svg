@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" role="img" aria-label="APS Payment">
+  <g fill="none" stroke="#1D4ED8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="19" width="42" height="30" rx="7"/><path d="M3 30h42"/><path d="M10 41h11"/>
+  </g>
+  <text x="58" y="40" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="0.6" fill="#111111">APS</text>
+  <text x="58" y="57" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.6" fill="#1D4ED8">PAYMENT</text>
+</svg>

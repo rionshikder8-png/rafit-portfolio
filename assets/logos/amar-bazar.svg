@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" role="img" aria-label="Amar Bazar Demo">
+  <g fill="none" stroke="#0E9F6E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 25h32l-3.4 30H11.4z"/><path d="M17 25v-4.5a7 7 0 0 1 14 0V25"/>
+  </g>
+  <text x="56" y="40" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="800" letter-spacing="0.4" fill="#111111">AMAR BAZAR</text>
+  <text x="56" y="57" font-family="DM Sans, Helvetica Neue, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.6" fill="#0E9F6E">DEMO</text>
+</svg>

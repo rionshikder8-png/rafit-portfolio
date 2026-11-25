@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafit Hasan Rion — Web Developer, Freelancer &amp; Founder of Adverune</title>
+<meta name="description" content="Rafit Hasan Rion is a web developer, freelancer and the founder of Adverune. He builds modern websites, e-commerce platforms and practical web applications.">
+<meta name="author" content="Rafit Hasan Rion">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- TODO: replace with your live domain (also update assets/js/config.js) -->
+<link rel="canonical" href="https://your-domain.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rafit Hasan Rion">
+<meta property="og:title" content="Rafit Hasan Rion — Web Developer, Freelancer &amp; Founder of Adverune">
+<meta property="og:description" content="Web developer, freelancer and founder of Adverune. Building modern digital experiences, professional websites and practical software solutions.">
+<meta property="og:url" content="https://your-domain.com/">
+<meta property="og:image" content="assets/images/og-image.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rafit Hasan Rion — Web Developer, Freelancer, Founder of Adverune">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="bn_BD">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rafit Hasan Rion — Web Developer, Freelancer &amp; Founder of Adverune">
+<meta name="twitter:description" content="Web developer, freelancer and founder of Adverune. Building modern digital experiences and practical software solutions.">
+<meta name="twitter:image" content="assets/images/og-image.webp">
+<meta name="twitter:image:alt" content="Rafit Hasan Rion portfolio">
+
+<!-- Icons -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/logos/adverune.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted, preloaded, font-display:swap -->
+<link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/noto-serif-bengali-bengali.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Styles -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rafit Hasan Rion",
+  "alternateName": "রাফিত হাসান রিয়ন",
+  "jobTitle": "Full-Stack Web Developer",
+  "description": "Web developer, freelancer and founder of Adverune. Builds modern websites, e-commerce platforms and practical web applications.",
+  "url": "https://your-domain.com/",
+  "image": "https://your-domain.com/assets/images/profile-portrait.webp",
+  "knowsAbout": ["Web Development", "Frontend Development", "Backend Development", "PHP", "JavaScript", "React.js", "Next.js", "Node.js", "MySQL", "MongoDB", "E-commerce Development"],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Adverune",
+    "url": "https://your-domain.com/"
+  },
+  "knowsLanguage": ["bn", "en"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#home" data-i18n="nav.home">Home</a>
+
+<!-- ============================== HEADER ============================== -->
+<header class="header" id="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Rafit Hasan Rion — home">
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span class="brand__text">
+          <span class="brand__name">Rafit Hasan Rion</span>
+          <span class="brand__sub">
+            <img src="assets/logos/adverune.svg" alt="" width="10" height="10" loading="lazy" decoding="async">
+            <span data-i18n="badge.founder">FOUNDER OF ADVERUNE</span>
+          </span>
+        </span>
+      </a>
+
+      <div class="nav__links">
+        <a class="nav__link" href="#home" data-nav="home" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="#about" data-nav="about" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="#services" data-nav="services" data-i18n="nav.services">Services</a>
+        <a class="nav__link" href="#projects" data-nav="projects" data-i18n="nav.projects">Projects</a>
+        <a class="nav__link" href="#skills" data-nav="skills" data-i18n="nav.skills">Skills</a>
+        <a class="nav__link" href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="nav__right">
+        <div class="lang" role="group" aria-label="Language / ভাষা">
+          <button class="lang__btn is-active" type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button class="lang__btn" type="button" data-lang-btn="bn" aria-pressed="false">বাংলা</button>
+        </div>
+        <a class="btn btn--primary btn--sm" href="#contact">
+          <span data-i18n="nav.cta">Let's Talk</span>
+          <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-drawer" data-i18n-attr="aria-label:nav.menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================== DRAWER ============================== -->
+<div class="drawer" id="mobile-drawer" aria-hidden="true">
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a class="drawer__link" href="#home" data-nav="home"><span data-i18n="nav.home">Home</span><small>01</small></a>
+    <a class="drawer__link" href="#about" data-nav="about"><span data-i18n="nav.about">About</span><small>02</small></a>
+    <a class="drawer__link" href="#services" data-nav="services"><span data-i18n="nav.services">Services</span><small>03</small></a>
+    <a class="drawer__link" href="#projects" data-nav="projects"><span data-i18n="nav.projects">Projects</span><small>04</small></a>
+    <a class="drawer__link" href="#skills" data-nav="skills"><span data-i18n="nav.skills">Skills</span><small>05</small></a>
+    <a class="drawer__link" href="#contact" data-nav="contact"><span data-i18n="nav.contact">Contact</span><small>06</small></a>
+  </nav>
+  <div class="drawer__foot">
+    <div class="drawer__lang">
+      <span class="drawer__meta" data-i18n="nav.lang">Language</span>
+      <div class="lang" role="group" aria-label="Language / ভাষা">
+        <button class="lang__btn is-active" type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button class="lang__btn" type="button" data-lang-btn="bn" aria-pressed="false">বাংলা</button>
+      </div>
+    </div>
+    <a class="btn btn--primary btn--block" href="#contact">
+      <span data-i18n="nav.cta">Let's Talk</span>
+      <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <p class="drawer__meta" data-i18n="hero.availability">Available for new projects</p>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- =============================== HERO =============================== -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <span class="hero__badge">
+          <img src="assets/logos/adverune.svg" alt="Adverune" width="18" height="18" decoding="async">
+          <span data-i18n="badge.founder">FOUNDER OF ADVERUNE</span>
+        </span>
+
+        <p class="hero__label" data-i18n="hero.label">HELLO, I'M</p>
+
+        <h1 class="hero__name">
+          <span data-i18n="hero.name">Rafit Hasan Rion</span>
+        </h1>
+
+        <p class="hero__role">
+          <span data-i18n="hero.role">Web Developer | Freelancer | Founder of Adverune</span>
+        </p>
+
+        <h2 class="hero__headline" data-i18n="hero.headline">Building Digital Experiences That Make a Difference.</h2>
+
+        <p class="hero__intro" data-i18n="hero.intro">I'm Rafit Hasan Rion, a web developer, freelancer, and founder of Adverune. I build modern digital experiences, professional websites, and practical software solutions.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">
+            <span data-i18n="hero.ctaWork">Explore My Work</span>
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--dark" href="#contact" data-i18n="hero.ctaContact">Contact Me</a>
+          <a class="btn btn--ghost" href="#" data-link="cv" data-download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+            <span data-i18n="hero.ctaCv">Download CV</span>
+          </a>
+        </div>
+
+        <div class="hero__socials">
+          <span class="hero__socials-label" data-i18n="social.eyebrow">CONNECT</span>
+          <a class="icon-btn" href="#" data-link="upwork" data-brand-link aria-label="Upwork">
+            <img src="assets/logos/social/upwork.svg" alt="Upwork" width="16" height="16" loading="lazy" decoding="async">
+          </a>
+          <a class="icon-btn" href="#" data-link="fiverr" data-brand-link aria-label="Fiverr">
+            <img src="assets/logos/social/fiverr.svg" alt="Fiverr" width="16" height="16" loading="lazy" decoding="async">
+          </a>
+          <a class="icon-btn" href="#" data-link="linkedin" data-brand-link aria-label="LinkedIn">
+            <img src="assets/logos/social/linkedin.svg" alt="LinkedIn" width="16" height="16" loading="lazy" decoding="async">
+          </a>
+          <a class="icon-btn" href="#" data-link="facebook" data-brand-link aria-label="Facebook">
+            <img src="assets/logos/social/facebook.svg" alt="Facebook" width="16" height="16" loading="lazy" decoding="async">
+          </a>
+          <a class="icon-btn" href="#" data-link="whatsapp" data-brand-link aria-label="WhatsApp">
+            <img src="assets/logos/social/whatsapp.svg" alt="WhatsApp" width="16" height="16" loading="lazy" decoding="async">
+          </a>
+          <a class="icon-btn" href="#" data-link="email" data-brand-link aria-label="Email">
+            <img src="assets/logos/social/gmail.svg" alt="Email" width="16" height="16" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="portrait float-slow">
+          <span class="portrait__glow" aria-hidden="true"></span>
+          <div class="portrait__inner">
+            <img class="portrait__img" src="assets/images/profile-portrait.webp"
+                 alt="Portrait of Rafit Hasan Rion" width="1000" height="1250"
+                 fetchpriority="high" decoding="async">
+            <span class="availability" id="availability">
+              <span class="availability__dot" aria-hidden="true"></span>
+              <span data-i18n="hero.availability">Available for new projects</span>
+            </span>
+          </div>
+          <div class="identity-card">
+            <img class="identity-card__logo" src="assets/logos/adverune.svg" alt="Adverune" width="34" height="34" loading="lazy" decoding="async">
+            <div>
+              <p class="identity-card__kicker" data-i18n="hero.cardFounder">FOUNDER OF ADVERUNE</p>
+              <p class="identity-card__role" data-i18n="hero.cardRole">WEB DEVELOPER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== ABOUT ============================== -->
+<section class="section section--alt" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="about.eyebrow">ABOUT ME</span>
+      <h2 data-i18n="about.title">Designing and building for the real world.</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__body reveal">
+        <p class="lede" data-i18n="about.lead">I work where clean design meets dependable code.</p>
+        <p data-i18n="about.p1">I'm a full-stack web developer working with individuals, startups and growing businesses. My focus is simple: understand the real problem, then build something fast, clear and genuinely useful.</p>
+        <p data-i18n="about.p2">As a freelancer I have learned to work independently, communicate clearly and deliver on time. Every project starts with listening, and ends with something the client can actually run and grow.</p>
+        <p data-i18n="about.p3">Through Adverune, the studio I founded, I take on brand and product work that needs both engineering and design thinking — from e-commerce storefronts to internal tools.</p>
+        <p data-i18n="about.p4">I care about the parts people never notice: fast loading, sensible structure, accessibility, and code the next developer can read.</p>
+
+        <div class="about__cards">
+          <article class="mini-card">
+            <svg class="mini-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg>
+            <h3 data-i18n="about.card1.t">Developer</h3>
+            <p data-i18n="about.card1.d">Clean, maintainable front-end and back-end code.</p>
+          </article>
+          <article class="mini-card">
+            <svg class="mini-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8.5 7V5.5A2.5 2.5 0 0111 3h2a2.5 2.5 0 012.5 2.5V7M3 12h18"/></svg>
+            <h3 data-i18n="about.card2.t">Freelancer</h3>
+            <p data-i18n="about.card2.d">Direct communication and dependable delivery.</p>
+          </article>
+          <article class="mini-card">
+            <svg class="mini-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1.5-1.2-2-3-2-5 0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7"/><path d="M9 21l3-3 3 3"/><circle cx="12" cy="10" r="2.2"/></svg>
+            <h3 data-i18n="about.card3.t">Entrepreneur</h3>
+            <p data-i18n="about.card3.d">Building products, not just pages.</p>
+          </article>
+          <article class="mini-card">
+            <svg class="mini-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l3 6.5 7 .8-5.2 4.8 1.4 7L12 18.6 5.8 22l1.4-7L2 10.3l7-.8z"/></svg>
+            <h3 data-i18n="about.card4.t">Founder of Adverune</h3>
+            <p data-i18n="about.card4.d">Running a studio for brand and web work.</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="about__visual reveal">
+        <div class="about-panel">
+          <p class="about-panel__mono" aria-hidden="true">RHR</p>
+          <p class="about-panel__name" data-i18n="hero.name">Rafit Hasan Rion</p>
+          <p class="about-panel__role" data-i18n="hero.cardRole">WEB DEVELOPER</p>
+          <div class="about-panel__divider" aria-hidden="true"></div>
+          <p class="about-panel__quote" data-i18n="about.lead">I work where clean design meets dependable code.</p>
+          <p class="about-panel__foot">
+            <img src="assets/logos/adverune.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <span data-i18n="badge.founder">FOUNDER OF ADVERUNE</span>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOCIAL ============================== -->
+<section class="section" id="social">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="social.eyebrow">CONNECT</span>
+      <h2 data-i18n="social.title">Find Me Across The Internet</h2>
+      <p data-i18n="social.sub">Freelance profiles, social pages and direct contact — whichever suits you best.</p>
+    </div>
+
+    <div class="social-grid">
+      <a class="social-card reveal" href="#" data-link="upwork" style="--brand:#6FDA44">
+        <span class="social-card__top">
+          <img class="social-card__logo" src="assets/logos/social/upwork.svg" alt="Upwork" width="26" height="26" loading="lazy" decoding="async">
+          <svg class="social-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </span>
+        <span class="social-card__name">Upwork</span>
+        <span class="social-card__desc" data-i18n="social.upwork.d">Hire me for web development projects.</span>
+      </a>
+
+      <a class="social-card reveal" href="#" data-link="fiverr" style="--brand:#1DBF73">
+        <span class="social-card__top">
+          <img class="social-card__logo" src="assets/logos/social/fiverr.svg" alt="Fiverr" width="26" height="26" loading="lazy" decoding="async">
+          <svg class="social-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </span>
+        <span class="social-card__name">Fiverr</span>
+        <span class="social-card__desc" data-i18n="social.fiverr.d">Order fixed-scope website and front-end work.</span>
+      </a>
+
+      <a class="social-card reveal" href="#" data-link="linkedin" style="--brand:#0A66C2">
+        <span class="social-card__top">
+          <img class="social-card__logo" src="assets/logos/social/linkedin.svg" alt="LinkedIn" width="26" height="26" loading="lazy" decoding="async">
+          <svg class="social-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </span>
+        <span class="social-card__name">LinkedIn</span>
+        <span class="social-card__desc" data-i18n="social.linkedin.d">Professional background and updates.</span>
+      </a>
+
+      <a class="social-card reveal" href="#" data-link="facebook" style="--brand:#1877F2">
+        <span class="social-card__top">
+          <img class="social-card__logo" src="assets/logos/social/facebook.svg" alt="Facebook" width="26" height="26" loading="lazy" decoding="async">
+          <svg class="social-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </span>
+        <span class="social-card__name">Facebook</span>
+        <span class="social-card__desc" data-i18n="social.facebook.d">Adverune's page on Facebook.</span>
+      </a>
+
+      <a class="social-card reveal" href="#" data-link="whatsapp" style="--brand:#25D366">
+        <span class="social-card__top">
+          <img class="social-card__logo" src="assets/logos/social/whatsapp.svg" alt="WhatsApp" width="26" height="26" loading="lazy" decoding="async">
+          <svg class="social-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </span>
+        <span class="social-card__name">WhatsApp</span>
+        <span class="social-card__desc" data-i18n="social.whatsapp.d">The fastest way to reach me.</span>
+      </a>
+
+      <a class="social-card reveal" href="#" data-link="email" style="--brand:#EA4335">
+        <span class="social-card__top">
+          <img class="social-card__logo" src="assets/logos/social/gmail.svg" alt="Email" width="26" height="26" loading="lazy" decoding="async">
+          <svg class="social-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </span>
+        <span class="social-card__name" data-i18n="contact.emailLabel">Email</span>
+        <span class="social-card__desc" data-i18n="social.email.d">For briefs, quotes and detailed questions.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SERVICES ============================= -->
+<section class="section section--alt" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="services.eyebrow">SERVICES</span>
+      <h2 data-i18n="services.title">What I Do</h2>
+      <p data-i18n="services.sub">End-to-end web work, from a single landing page to a complete storefront.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="3"/><path d="M2.5 9h19M6 6.6h.01M8.6 6.6h.01"/></svg>
+        </span>
+        <h3 data-i18n="services.web.t">Website Development</h3>
+        <p data-i18n="services.web.d">Fast, responsive marketing sites and business websites built to convert.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3.5" width="19" height="17" rx="3"/><path d="M2.5 8.5h19M8.5 8.5v12"/></svg>
+        </span>
+        <h3 data-i18n="services.app.t">Web Application Development</h3>
+        <p data-i18n="services.app.d">Custom dashboards, portals and tools shaped around how you actually work.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5h17l-1.4 12.2a2 2 0 01-2 1.8H6.9a2 2 0 01-2-1.8z"/><path d="M8.5 7.5V6a3.5 3.5 0 017 0v1.5"/></svg>
+        </span>
+        <h3 data-i18n="services.ecom.t">E-commerce Website Development</h3>
+        <p data-i18n="services.ecom.d">Catalogues, carts, checkout and order flows that stay simple to manage.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 17.5L3 12l5.5-5.5M15.5 6.5L21 12l-5.5 5.5"/></svg>
+        </span>
+        <h3 data-i18n="services.frontend.t">Frontend Development</h3>
+        <p data-i18n="services.frontend.d">Pixel-accurate interfaces in clean HTML, CSS and JavaScript.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="7" rx="2"/><rect x="3" y="13.5" width="18" height="7" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
+        </span>
+        <h3 data-i18n="services.backend.t">Backend Development</h3>
+        <p data-i18n="services.backend.d">APIs, authentication and business logic that hold up under real use.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5C6.8 4.5 6 6 6 8v2c0 1.5-.8 2-2 2 1.2 0 2 .5 2 2v2c0 2 .8 3.5 3 3.5M15 4.5c2.2 0 3 1.5 3 3.5v2c0 1.5.8 2 2 2-1.2 0-2 .5-2 2v2c0 2-.8 3.5-3 3.5"/></svg>
+        </span>
+        <h3 data-i18n="services.php.t">Custom PHP Development</h3>
+        <p data-i18n="services.php.d">Tailored PHP systems, integrations and improvements to legacy code.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></svg>
+        </span>
+        <h3 data-i18n="services.database.t">Database Development</h3>
+        <p data-i18n="services.database.d">Well-structured MySQL, MariaDB and NoSQL data models.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14a8.5 8.5 0 11-9-9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.6"/></svg>
+        </span>
+        <h3 data-i18n="services.optimize.t">Website Optimization</h3>
+        <p data-i18n="services.optimize.d">Speed, Core Web Vitals, SEO structure and accessibility fixes.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6.5a4 4 0 015.2 5.2l-7.6 7.6a3.4 3.4 0 01-4.8-4.8z"/><path d="M4 4l3.5 3.5"/></svg>
+        </span>
+        <h3 data-i18n="services.maintain.t">Website Maintenance</h3>
+        <p data-i18n="services.maintain.d">Updates, backups, fixes and ongoing care for live sites.</p>
+        <a class="service-card__more" href="#contact"><span data-i18n="services.learn">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROJECTS ============================= -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="projects.eyebrow">WORK</span>
+      <h2 data-i18n="projects.title">Selected Projects</h2>
+      <p data-i18n="projects.sub">Platforms and products I have designed and built. Tap any mark to open it.</p>
+    </div>
+  </div>
+
+  <div class="marquee" data-marquee="projects" data-row="1" aria-label="Projects, first row" data-i18n-attr="aria-label:projects.row1">
+    <div class="marquee__track" data-track>
+      <a class="logo-card" data-project="aps-payment" style="--brand:#1D4ED8" aria-label="APS Payment">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="19" width="42" height="30" rx="7"/><path d="M3 30h42"/><path d="M10 41h11"/></g>
+          <text x="58" y="40" font-size="23" font-weight="800" fill="currentColor">APS</text>
+          <text x="58" y="57" font-size="10.5" font-weight="600" letter-spacing="3.6" fill="currentColor" opacity=".72">PAYMENT</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+
+      <a class="logo-card" data-project="adverune" style="--brand:#6D3AF0" aria-label="Adverune">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <path d="M22 12 40 58H4z" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/>
+          <path d="M22 34v24" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/>
+          <text x="56" y="45" font-size="25" font-weight="700" letter-spacing="2.2" fill="currentColor">ADVERUNE</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+
+      <a class="logo-card" data-project="amar-bazar-demo" style="--brand:#0E9F6E" aria-label="Amar Bazar Demo">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 25h32l-3.4 30H11.4z"/><path d="M17 25v-4.5a7 7 0 0114 0V25"/></g>
+          <text x="56" y="40" font-size="21" font-weight="800" fill="currentColor">AMAR BAZAR</text>
+          <text x="56" y="57" font-size="10.5" font-weight="600" letter-spacing="3.6" fill="currentColor" opacity=".72">DEMO</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="marquee marquee--reverse" data-marquee="projects" data-row="2" aria-label="Projects, second row" data-i18n-attr="aria-label:projects.row2">
+    <div class="marquee__track" data-track>
+      <a class="logo-card" data-project="international-ecommerce" style="--brand:#F97316" aria-label="International E-Commerce">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="2.8"><circle cx="24" cy="36" r="18"/><ellipse cx="24" cy="36" rx="7.5" ry="18"/><path d="M6.5 29h35M6.5 43h35"/></g>
+          <text x="54" y="33" font-size="9.5" font-weight="700" letter-spacing="2.9" fill="currentColor" opacity=".72">INTERNATIONAL</text>
+          <text x="54" y="56" font-size="21" font-weight="800" fill="currentColor">E-COMMERCE</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+
+      <a class="logo-card" data-project="dorahost" style="--brand:#0EA5E9" aria-label="Dorahost">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12 40 21v18l-16 9-16-9V21z"/><path d="M17 28h14M17 34h14"/></g>
+          <text x="56" y="44" font-size="24" font-weight="800" letter-spacing="2.4" fill="currentColor">DORAHOST</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+
+      <a class="logo-card" data-project="a-mail" style="--brand:#7C3AED" aria-label="A-Mail by Adverune">
+        <svg class="logo-card__svg" viewBox="0 0 260 72" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="20" width="42" height="28" rx="6"/><path d="M5 23l19 14 19-14"/></g>
+          <text x="58" y="40" font-size="23" font-weight="800" letter-spacing="0.8" fill="currentColor">A-MAIL</text>
+          <text x="58" y="57" font-size="9.5" font-weight="600" letter-spacing="2.6" fill="currentColor" opacity=".72">BY ADVERUNE</text>
+        </svg>
+        <span class="logo-card__hint" data-i18n="projects.visit">Open project</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== TECHNOLOGIES =========================== -->
+<section class="section section--alt" id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="tech.eyebrow">TOOLKIT</span>
+      <h2 data-i18n="tech.title">Technologies &amp; Tools</h2>
+      <p data-i18n="tech.sub">The stack I reach for when a project has to be fast, stable and easy to extend.</p>
+    </div>
+  </div>
+
+  <div class="marquee" data-marquee="tech" data-row="1" aria-label="Technologies, first row" data-i18n-attr="aria-label:tech.row1">
+    <div class="marquee__track" data-track></div>
+  </div>
+
+  <div class="marquee marquee--reverse" data-marquee="tech" data-row="2" aria-label="Technologies, second row" data-i18n-attr="aria-label:tech.row2">
+    <div class="marquee__track" data-track></div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact-panel reveal">
+      <div class="contact-panel__grid">
+        <div>
+          <span class="eyebrow" data-i18n="contact.eyebrow">CONTACT</span>
+          <h2 data-i18n="contact.title">Let's Work Together</h2>
+          <p class="contact-panel__intro" data-i18n="contact.sub">Tell me what you are building. I reply to serious enquiries within one business day.</p>
+
+          <div class="contact-list">
+            <a class="contact-row" href="#" data-link="whatsapp" data-contact-row>
+              <span class="contact-row__icon"><img src="assets/logos/social/whatsapp.svg" alt="" width="16" height="16" loading="lazy" decoding="async"></span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.whatsappLabel">WhatsApp</span>
+                <span class="contact-row__value" data-value="whatsapp">—</span>
+              </span>
+            </a>
+            <a class="contact-row" href="#" data-link="email" data-contact-row>
+              <span class="contact-row__icon"><img src="assets/logos/social/gmail.svg" alt="" width="16" height="16" loading="lazy" decoding="async"></span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.emailLabel">Email</span>
+                <span class="contact-row__value" data-value="email">—</span>
+              </span>
+            </a>
+            <a class="contact-row" href="#" data-link="phone" data-contact-row>
+              <span class="contact-row__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 4.5h4l2 5-2.5 1.5a11 11 0 005 5L14.5 13l5 2v4a1.5 1.5 0 01-1.6 1.5A16.5 16.5 0 013 6.1 1.5 1.5 0 014.5 4.5z"/></svg>
+              </span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.phoneLabel">Phone</span>
+                <span class="contact-row__value" data-value="phone">—</span>
+              </span>
+            </a>
+            <a class="contact-row" href="#" data-link="facebook" data-contact-row>
+              <span class="contact-row__icon"><img src="assets/logos/social/facebook.svg" alt="" width="16" height="16" loading="lazy" decoding="async"></span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.facebookLabel">Facebook</span>
+                <span class="contact-row__value" data-value="facebook">—</span>
+              </span>
+            </a>
+            <a class="contact-row" href="#" data-link="linkedin" data-contact-row>
+              <span class="contact-row__icon"><img src="assets/logos/social/linkedin.svg" alt="" width="16" height="16" loading="lazy" decoding="async"></span>
+              <span>
+                <span class="contact-row__label" data-i18n="contact.linkedinLabel">LinkedIn</span>
+                <span class="contact-row__value" data-value="linkedin">—</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <p class="form-card__title" data-i18n="contact.formTitle">Start a project</p>
+          <p class="form-card__note" data-i18n="contact.formNote">This form opens WhatsApp with your message ready to send. Nothing is stored on a server.</p>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="cf-name" data-i18n="form.name">Full Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required
+                       data-i18n-attr="placeholder:form.namePh" placeholder="Your name">
+                <span class="field__error" data-error="name" data-i18n="form.errorName">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <label for="cf-email" data-i18n="form.email">Email Address</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required
+                       data-i18n-attr="placeholder:form.emailPh" placeholder="you@example.com">
+                <span class="field__error" data-error="email" data-i18n="form.errorEmail">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cf-subject" data-i18n="form.subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" required
+                     data-i18n-attr="placeholder:form.subjectPh" placeholder="What do you need?">
+              <span class="field__error" data-error="subject" data-i18n="form.errorSubject">Please add a short subject.</span>
+            </div>
+
+            <div class="field">
+              <label for="cf-message" data-i18n="form.message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required
+                        data-i18n-attr="placeholder:form.messagePh" placeholder="A few lines about your project, timeline and budget."></textarea>
+              <span class="field__error" data-error="message" data-i18n="form.errorMessage">Please write at least 10 characters.</span>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              <span data-i18n="form.send">Send Message</span>
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__brand-name">Rafit Hasan Rion</p>
+        <p class="footer__tagline" data-i18n="footer.tagline">Web Developer | Freelancer | Founder of Adverune</p>
+        <div class="footer__socials">
+          <a class="icon-btn" href="#" data-link="upwork" aria-label="Upwork"><img src="assets/logos/social/upwork.svg" alt="Upwork" width="16" height="16" loading="lazy" decoding="async"></a>
+          <a class="icon-btn" href="#" data-link="fiverr" aria-label="Fiverr"><img src="assets/logos/social/fiverr.svg" alt="Fiverr" width="16" height="16" loading="lazy" decoding="async"></a>
+          <a class="icon-btn" href="#" data-link="linkedin" aria-label="LinkedIn"><img src="assets/logos/social/linkedin.svg" alt="LinkedIn" width="16" height="16" loading="lazy" decoding="async"></a>
+          <a class="icon-btn" href="#" data-link="facebook" aria-label="Facebook"><img src="assets/logos/social/facebook.svg" alt="Facebook" width="16" height="16" loading="lazy" decoding="async"></a>
+          <a class="icon-btn" href="#" data-link="whatsapp" aria-label="WhatsApp"><img src="assets/logos/social/whatsapp.svg" alt="WhatsApp" width="16" height="16" loading="lazy" decoding="async"></a>
+          <a class="icon-btn" href="#" data-link="email" aria-label="Email"><img src="assets/logos/social/gmail.svg" alt="Email" width="16" height="16" loading="lazy" decoding="async"></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 data-i18n="footer.explore">Explore</h3>
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 data-i18n="footer.connect">Connect</h3>
+        <ul>
+          <li><a href="#" data-link="whatsapp">WhatsApp</a></li>
+          <li><a href="#" data-link="email" data-value="email">Email</a></li>
+          <li><a href="#" data-link="linkedin">LinkedIn</a></li>
+          <li><a href="#" data-link="facebook">Facebook</a></li>
+          <li><a href="#" data-link="upwork">Upwork</a></li>
+          <li><a href="#" data-link="fiverr">Fiverr</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy" data-i18n="footer.rights">© 2026 Rafit Hasan Rion. All rights reserved.</p>
+      <a class="footer__powered" href="#" data-link="adverune">
+        <img src="assets/logos/adverune.svg" alt="Adverune" width="18" height="18" loading="lazy" decoding="async">
+        <span>Powered By Adverune</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top" data-i18n-attr="aria-label:misc.backToTop">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- Scripts: config → language → sliders → main -->
+<script src="assets/js/config.js"></script>
+<script src="assets/js/language.js"></script>
+<script src="assets/js/sliders.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

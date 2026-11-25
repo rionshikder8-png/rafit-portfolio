@@ -1,0 +1,138 @@
+/* ==========================================================================
+   RAFIT HASAN RION — RESPONSIVE LAYOUT
+   Mobile-first refinements at each breakpoint.
+   ========================================================================== */
+
+/* ≥ 1280 — comfortable desktop breathing room ----------------------------- */
+@media (min-width: 1280px) {
+  .hero { padding-top: calc(var(--nav-h) + 72px); }
+}
+
+/* ≤ 1080 — tighten the navigation and hero gutter ------------------------- */
+@media (max-width: 1080px) {
+  .nav__link { padding: 9px 11px; font-size: 13px; }
+  .hero__grid { gap: 34px; }
+  .about__grid { grid-template-columns: minmax(0, 1fr); }
+  .about__visual { position: static; order: -1; }
+  .about-panel { padding: 30px 28px 26px; }
+  .about__cards { margin-top: 24px; }
+  .logo-card { width: 244px; height: 124px; }
+}
+
+/* ≤ 980 — two-column grids collapse -------------------------------------- */
+@media (max-width: 980px) {
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-panel__grid { grid-template-columns: minmax(0, 1fr); }
+  .contact-panel { border-radius: 28px; }
+  .footer__top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .footer__brand { grid-column: 1 / -1; }
+  .hero__headline { max-width: 24ch; }
+}
+
+/* ≤ 880 — switch to the mobile header ------------------------------------ */
+@media (max-width: 880px) {
+  :root { --nav-h: 64px; }
+
+  .nav__links { display: none; }
+  .nav__toggle { display: grid; }
+  .nav__right .btn { display: none; }
+  .drawer { display: block; }
+  .nav { padding: 0 10px 0 14px; border-radius: 20px; }
+  .brand__sub { display: none; }
+  .brand__name { font-size: 12.5px; }
+
+  .hero { padding-top: calc(var(--nav-h) + 40px); }
+  .hero__grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .hero__visual { max-width: 460px; width: 100%; margin-inline: auto; }
+  .hero__headline { max-width: 100%; }
+  .hero__intro { max-width: 52ch; }
+  .identity-card { left: 12px; bottom: 16px; }
+  .availability { top: 16px; right: 16px; }
+  .portrait { aspect-ratio: 4 / 4.7; }
+}
+
+/* ≤ 700 — single column cards ------------------------------------------- */
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+
+  .services-grid { grid-template-columns: minmax(0, 1fr); }
+  .social-grid { grid-template-columns: minmax(0, 1fr); }
+  .about__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .form__row { grid-template-columns: minmax(0, 1fr); }
+  .footer__top { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; gap: 14px; }
+
+  .hero__actions { gap: 9px; }
+  .hero__actions .btn { flex: 1 1 auto; min-width: 148px; }
+
+  .logo-card { width: 214px; height: 114px; padding: 18px 20px; }
+  .tech-card { width: 114px; height: 96px; }
+  .tech-card img { width: 26px; height: 26px; }
+
+  .marquee {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  }
+
+  .contact-panel { padding: 24px 18px; border-radius: 24px; }
+  .contact-row { padding: 11px 10px; }
+  .form-card { padding: 20px 16px; }
+}
+
+/* ≤ 480 — small phones --------------------------------------------------- */
+@media (max-width: 480px) {
+  :root { --gutter: 16px; --section-y: 62px; }
+
+  .hero__name { font-size: clamp(2.15rem, 10.4vw, 2.9rem); }
+  html[data-lang='bn'] .hero__name { font-size: clamp(2rem, 9.2vw, 2.6rem); }
+  .hero__role { font-size: 12px; }
+  .hero__headline { font-size: 1.18rem; }
+  .hero__badge { font-size: 9.5px; letter-spacing: 0.12em; }
+  .hero__socials { flex-wrap: wrap; }
+
+  .about__cards { grid-template-columns: minmax(0, 1fr); }
+  .about-panel { padding: 26px 22px 24px; }
+
+  .identity-card { left: 8px; right: 8px; bottom: 12px; max-width: none; padding: 9px 12px 9px 9px; }
+  .identity-card__logo { width: 30px; height: 30px; }
+  .availability { top: 12px; right: 12px; font-size: 9.5px; padding: 6px 10px; }
+
+  .logo-card { width: 186px; height: 104px; padding: 16px 18px; }
+  .logo-card__svg { max-width: 176px; max-height: 52px; }
+  .tech-card { width: 104px; height: 90px; gap: 8px; }
+  .tech-card__name { font-size: 10.5px; }
+
+  .drawer__link { font-size: 1.25rem; padding: 14px 2px; }
+  .btn { --btn-h: 50px; padding: 0 20px; font-size: 14px; }
+  .section-head h2 { font-size: clamp(1.7rem, 7.4vw, 2.1rem); }
+}
+
+/* Landscape phones: keep the hero from getting too tall ------------------- */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero { padding-top: calc(var(--nav-h) + 26px); padding-bottom: 40px; }
+  .hero__visual { max-width: 300px; }
+}
+
+/* ≤ 380 — very narrow phones: the drawer carries the language switch ----- */
+@media (max-width: 380px) {
+  .nav__right .lang { display: none; }
+  .brand__name { font-size: 11.5px; }
+  .brand { gap: 9px; }
+  .brand__mark { width: 30px; height: 30px; border-radius: 9px; font-size: 12px; }
+  .nav { padding: 0 8px 0 12px; }
+  .nav__toggle { width: 40px; height: 40px; }
+}
+
+/* Very wide screens ------------------------------------------------------ */
+@media (min-width: 1600px) {
+  :root { --container: 1240px; }
+}
+
+/* Print ------------------------------------------------------------------ */
+@media print {
+  .header, .drawer, .to-top, .marquee { display: none !important; }
+  body { color: #000; }
+  .section { padding-block: 24px; }
+  a[href^='http']::after { content: ' (' attr(href) ')'; font-size: 10px; }
+}
